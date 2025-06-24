@@ -2,13 +2,10 @@
 /* TODO: Manually optimize CSS styling. */
 /* Remove unused and unnecessary styling and selectors */
 
-form {}
-
 form {
   display: flex;
   flex-direction: column;
 }
-
 
 form {
   max-width: 100px;
@@ -37,8 +34,6 @@ input[type="text"] {
   box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
-
-
 
 input[type="submit"] {
   width: 100%;

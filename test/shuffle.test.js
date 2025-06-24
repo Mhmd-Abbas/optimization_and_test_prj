@@ -17,12 +17,12 @@ describe("Verifies shuffle funtionality", () => {
     })
 
     //edge case
-    it("should return that the input is not iterable", () => {
+    it("should return the input as it is", () => {
         //data to pass to function
-        const input = 1;
+        const input = [45];
         const result = shuffle(input);
 
         //check result
-        assert.isNotArray(result, `expected an array but recieved ${result}`)
+        assert.equal(result, 45, `expected 45 but recieved ${result}`)
     })
 })

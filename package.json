@@ -2,16 +2,14 @@
   "name": "prj",
   "version": "1.0.0",
   "description": "",
-  "target": {
-    "main": {
-      "distDir": "dist",
-      "source": "index.html"
-    }
-  },
+  "source": "index.html",
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "cypress": "cypress",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "",
   "license": "MIT",
