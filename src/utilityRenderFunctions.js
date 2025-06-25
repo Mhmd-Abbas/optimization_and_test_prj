@@ -19,7 +19,7 @@ const createElement = (elementType, text) => {
 const createImage = (url, alt) => {
     const img = document.createElement('img');
     img.src = url;
-    img.alt == alt;
+    img.alt = alt;
     return img;
 };
 
@@ -34,11 +34,6 @@ const createToggleButton = (text, element) => {
     const button = document.createElement("button");
     button.textContent = text;
     button.addEventListener("click", () => {
-
-
-
-
-
         element.classList.toggle("notVisible");
     });
 

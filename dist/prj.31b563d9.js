@@ -130,7 +130,7 @@
 
   // Only insert newRequire.load when it is actually used.
   // The code in this file is linted against ES5, so dynamic import is not allowed.
-  // INSERT_LOAD_HERE
+  function $parcel$resolve(url) {  url = importMap[url] || url;  return import.meta.resolve(distDir + url);}newRequire.resolve = $parcel$resolve;
 
   Object.defineProperty(newRequire, 'root', {
     get: function () {
@@ -986,7 +986,7 @@ const createElement = (elementType, text)=>{
 const createImage = (url, alt)=>{
     const img = document.createElement('img');
     img.src = url;
-    img.alt;
+    img.alt = alt;
     return img;
 };
 // Create a header element with specified text and data attribute
@@ -1151,7 +1151,10 @@ const renderAboutPage = ()=>{
     main.append(containerOuter);
 };
 
-},{"../images/aboutImage.png":"khGba","./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"khGba":[function() {},{}],"bA49a":[function(require,module,exports,__globalThis) {
+},{"../images/aboutImage.png":"Z7eda","./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"Z7eda":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("aboutImage.4141cd96.png") + "?" + Date.now();
+
+},{}],"bA49a":[function(require,module,exports,__globalThis) {
 //DO NOT CHANGE ANYTHING IN THIS FILE//
 // This file is responsible for loading the home page
 //Imports image for homepage
@@ -1181,6 +1184,9 @@ const renderHomePage = ()=>{
     main.append(homeContainer);
 };
 
-},{"../images/homePage.png":"4K0cp","./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4K0cp":[function() {},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequiref007", {})
+},{"../images/homePage.png":"11gjO","./utilityRenderFunctions.js":"guzyD","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"11gjO":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("homePage.32863026.png") + "?" + Date.now();
+
+},{}]},["5j6Kf","a0t4e"], "a0t4e", "parcelRequiref007", {}, "./", "/")
 
 //# sourceMappingURL=prj.31b563d9.js.map

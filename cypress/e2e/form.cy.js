@@ -41,7 +41,7 @@ describe('Verify that both the "add new set" and "add new card" forms work', () 
     cy.get('[class="error"]').should('exist')
   })
 
-  it('should navigate to the Card set page and add a new card with no term and description', () => {
+  it('should navigate to the Card set page and add a new card with no term and no description', () => {
     cy.get('[id="cardSetPage"]').click()
     cy.get('[data-cy="1"]').click()
     cy.get('[class="cardPageContainer"]').should('exist')
